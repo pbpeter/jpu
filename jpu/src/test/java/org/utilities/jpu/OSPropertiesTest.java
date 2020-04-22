@@ -1,4 +1,7 @@
+package org.utilities.jpu;
+
 import org.junit.Test;
+import org.utilities.jpu.OSProperties;
 
 import static org.junit.Assert.*;
 
