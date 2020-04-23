@@ -1,3 +1,5 @@
+package org.utilities.jpu;
+
 /**
  * Use the enum to get the system properties of your operating system.
  * Properties list is here: https://docs.oracle.com/javase/7/docs/api/java/lang/System.html#getProperties()

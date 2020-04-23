@@ -1,7 +1,9 @@
-import org.junit.Test;
+package org.utilities.jpu;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
+import org.junit.Test;
+import org.utilities.jpu.OSProperties;
+
+import static org.junit.Assert.*;
 
 public class OSPropertiesTest {
 
@@ -17,31 +19,31 @@ public class OSPropertiesTest {
 
     @Test
     public void testPropertyName() {
-        assertTrue(OSProperties.NAME.getValue().length() > 0);
+        assertFalse(OSProperties.NAME.getValue().isEmpty());
     }
 
     @Test
     public void testPropertyVersion() {
-        assertTrue(OSProperties.VERSION.getValue().length() > 0);
+        assertFalse(OSProperties.VERSION.getValue().isEmpty());
     }
 
     @Test
     public void testPropertyCountry() {
-        assertTrue(OSProperties.COUNTRY.getValue().length() > 0);
+        assertFalse(OSProperties.COUNTRY.getValue().isEmpty());
     }
 
     @Test
     public void testPropertyLanguage() {
-        assertTrue(OSProperties.LANGUAGE.getValue().length() > 0);
+        assertFalse(OSProperties.LANGUAGE.getValue().isEmpty());
     }
 
     @Test
     public void testPropertyJavaVersion() {
-        assertTrue(OSProperties.JAVA_VERSION.getValue().length() > 0);
+        assertFalse(OSProperties.JAVA_VERSION.getValue().isEmpty());
     }
 
     @Test
     public void testPropertyFileSeparator() {
-        assertTrue(OSProperties.FILE_SEPARATOR.getValue().length() > 0);
+        assertFalse(OSProperties.FILE_SEPARATOR.getValue().isEmpty());
     }
 }
