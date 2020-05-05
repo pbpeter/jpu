@@ -15,6 +15,7 @@ public class OSPropertiesTest {
         assertEquals("LANGUAGE", OSProperties.LANGUAGE.name());
         assertEquals("JAVA_VERSION", OSProperties.JAVA_VERSION.name());
         assertEquals("FILE_SEPARATOR", OSProperties.FILE_SEPARATOR.name());
+        assertEquals("LINE_SEPARATOR", OSProperties.LINE_SEPARATOR.name());
     }
 
     @Test
@@ -46,4 +47,7 @@ public class OSPropertiesTest {
     public void testPropertyFileSeparator() {
         assertFalse(OSProperties.FILE_SEPARATOR.getValue().isEmpty());
     }
+
+    @Test
+    public void testPropertyLineSeparator() { assertFalse(OSProperties.LINE_SEPARATOR.getValue().isEmpty());}
 }
