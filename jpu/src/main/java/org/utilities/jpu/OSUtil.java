@@ -1,7 +1,5 @@
 package org.utilities.jpu;
 
-import java.io.File;
-
 public class OSUtil {
 
     private static final String OS_NAME = OSProperties.NAME.getValue();
