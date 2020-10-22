@@ -22,13 +22,4 @@ public class OSUtil {
         return (OS_NAME.contains("sunos"));
     }
 
-    /**
-     * On platforms could differ program location and program execution.
-     *
-     * @return path of program execution (String)
-     */
-    public static String getExecutionPath() {
-        return new File(
-                ClassLoader.getSystemClassLoader().getResource(".").getPath()).getAbsolutePath();
-    }
 }

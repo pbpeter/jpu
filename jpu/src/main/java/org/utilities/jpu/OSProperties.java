@@ -12,7 +12,8 @@ public enum OSProperties {
     LANGUAGE("user.language"),
     JAVA_VERSION("java.version"),
     FILE_SEPARATOR("file.separator"),
-    LINE_SEPARATOR("line.separator");
+    LINE_SEPARATOR("line.separator"),
+    USER_DIRECTORY("user.dir");
 
     private String value;
 
